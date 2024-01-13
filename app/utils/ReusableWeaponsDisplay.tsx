@@ -58,7 +58,7 @@ export default function ReusableWeaponsDisplay({
                                 onClick={() => handleChooseWeapon(uuid as string)}
                                 className={`${padding ? "pt-3" : "pt-10"} ${
                                     height ? "" : "h-24"
-                                } px-3 pb-2 bg-slate-50/20 hover:border-2 hover:border-green-300 hover:bg-green-300/50`}
+                                } px-3 pb-2 bg-slate-50/20 border-2 border-transparent hover:border-2 hover:border-green-300 hover:bg-green-300/50`}
                             >
                                 {shopData?.newImage && (
                                     <Image
