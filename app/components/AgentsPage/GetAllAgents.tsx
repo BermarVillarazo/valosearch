@@ -104,7 +104,7 @@ export default function GetAllAgents() {
                                     showAgentAbilities
                                         ? "-translate-y-[330px] -translate-x-[80%]"
                                         : "left-1/2"
-                                } fixed top-1/2 transform -translate-y-72 -translate-x-1/2 w-auto h-auto z-[-10] ease-in-out duration-300`}
+                                } fixed top-96 transform -translate-y-80 -translate-x-1/2 w-auto h-auto z-[-10] ease-in-out duration-300`}
                             />
                         )}
                         {/* BUTTON FOR SELECTING AN AGENT */}
