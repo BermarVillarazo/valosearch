@@ -15,7 +15,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="flex my-5 mx-20">
+        <nav className="flex my-5 px-20 max-lg:w-[1000px]">
             <Link href={"/"} className="font-bold" title="Back to homepage? 🙂">
                 <ReusableLogo valo="Valo" search="Search" isLargeText={false} />
             </Link>

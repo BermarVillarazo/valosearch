@@ -9,7 +9,10 @@ export default function Home() {
                     <ReusableLogo valo="Valo" search="Search" isLargeText={true} />
                 </span>
             </p>
-            <span>Your go-to hub for exploring all aspects of the Valorant gaming experience.</span>
+            <span>
+                Your go-to <span className="text-red-500">hub</span> for exploring all aspects of the Valorant gaming
+                experience.
+            </span>
         </main>
     );
 }

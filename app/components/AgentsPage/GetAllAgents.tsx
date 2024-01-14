@@ -51,19 +51,18 @@ export default function GetAllAgents() {
                         </p>
 
                         {/* DISPLAY THE ABILITIES OF THE AGENT */}
-                        <div className="flex flex-col justify-center items-center ml-auto">
+                        <div className="flex flex-col justify-center items-center ml-auto max-md:mx-auto max-md: max-md:mt-[500px]">
                             {showAgentAbilities &&
                                 abilities?.map(
                                     ({ slot, displayName, description, displayIcon }) => (
                                         <div
                                             key={slot}
-                                            // onClick={() => handleShowAgentAbilityDescription(slot)}
-                                            className="text-center hover:animate-pulse hover:bg-slate-50/20 p-3 rounded-lg"
+                                            className="text-center hover:animate-pulse max-md:hover:animate-none hover:bg-slate-50/20 max-md:hover:bg-slate-700/90 p-3 rounded-lg"
                                         >
                                             <div className="flex justify-center items-center gap-5">
-                                                <div>
-                                                    <p className="w-96">{description}</p>
-                                                </div>
+                                                <p className="w-96 max-md:w-[700px] max-md:text-xl">
+                                                    {description}
+                                                </p>
                                                 <div>
                                                     {displayIcon && (
                                                         <Image
@@ -72,11 +71,11 @@ export default function GetAllAgents() {
                                                             width={100}
                                                             height={100}
                                                             priority
-                                                            className="w-10 h-10 mx-auto"
+                                                            className="w-10 h-10 mx-auto max-md:w-14 max-md:h-14"
                                                         />
                                                     )}
-                                                    <p>{slot}</p>
-                                                    <p>{displayName}</p>
+                                                    <p className="max-md:text-xl">{slot}</p>
+                                                    <p className="max-md:text-xl">{displayName}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,9 +101,9 @@ export default function GetAllAgents() {
                                 priority
                                 className={`${
                                     showAgentAbilities
-                                        ? "-translate-y-[330px] -translate-x-[80%]"
+                                        ? "-translate-y-[330px] -translate-x-[80%] max-md:-translate-y-50 max-md:-translate-x-44"
                                         : "left-1/2"
-                                } fixed top-96 transform -translate-y-80 -translate-x-1/2 w-auto h-auto z-[-10] ease-in-out duration-300`}
+                                } fixed top-96 transform -translate-y-80 -translate-x-1/2 w-auto h-auto z-[-10] ease-in-out duration-700 max-lg:-translate-y-56 max-lg:w-[500px]`}
                             />
                         )}
                         {/* BUTTON FOR SELECTING AN AGENT */}
